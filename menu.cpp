@@ -6,9 +6,10 @@ menu::menu(){
 }
 
 void menu::popMenu(){
+    std::cout << "The two input files are DAG.txt and DCG.txt. DAG does not contain cycle; DCG contains cycle." << std::endl;
     std::cout << "(1) Open input file." << std::endl; /* Prompt the user to enter an external input file name or use default file name. */
     std::cout << "(2) Print the graph." << std::endl;
-    std::cout << "(3) Detect Cycle." << std::endl; /* prompt for selection */
+    std::cout << "(3) Detect Cycle. (Always detect cycle before sort.)" << std::endl; /* prompt for selection */
     std::cout << "(4) Topological sort." << std::endl; /* prompt for entering new record */
     std::cout << "(5) Quit." << std::endl;
 

@@ -73,7 +73,11 @@ void Graph::delEdge(int node1, int node2){
 
 // Topological sort
 void Graph::topologicalSort(){
-    std::cout << "sort" << std::endl;
+    if(isDag) std::cout << "Sorting: " << std::endl;
+    else{
+        std::cout << "The graph is not a DAG. It cannot be sorted." << std::endl;
+        return;
+    }
     for(int i=1; i<= numOfNode; i++){
         if(inDegree[i].second!=0){
             continue;
